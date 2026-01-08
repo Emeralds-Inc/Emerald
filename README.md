@@ -1,68 +1,40 @@
-# Ɛ𖣐 (Emerald) Programming Language
+# Lax Programming Language
 
 ## Overview
 
-**Ɛ𖣐 (Emerald)** is a low-level, high-complexity programming language developed by Emeralds Inc. It is engineered for direct processor execution, system kernel development, and the creation of native Linux binaries. The language is defined by its extreme verbosity and architectural proximity to hardware.
+**Lax** is a high-level, user-friendly programming language developed by Lax Inc. It is engineered to be a normal, very easy-to-learn language that provides a smooth experience for developers. While it can create native Linux binaries and handle system-level tasks, its design focuses on simplicity and readability, making it accessible for everyone.
 
-The design philosophy of Ɛ𖣐 prioritizes granular control over abstraction. A simple "Hello World" implementation requires over 200 lines of code, as the language mandates manual memory management, register manipulation, and binary-encoded character output.
+The design philosophy of **Lax** prioritizes intuitive abstractions over unnecessary complexity. Unlike complicated languages, Lax allows you to get results quickly with minimal code, providing a powerful yet "light" environment for modern development.
 
 ## Technical Specifications
 
-* **File Extension:** `.estx`
-* **Execution Model:** Direct processor execution / Native Linux Binary
-* **Paradigm:** Low-level Imperative / Binary-Structural
-* **Instruction Set:** Over 1,000 unique commands
-* **IDE:** Elementary (Custom environment for Ɛ𖣐 development)
+* **File Extension:** `.lx`
+* **Execution Model:** Direct execution / Native Linux Binary
+* **Paradigm:** High-level Multi-paradigm / Functional-Logic
+* **Instruction Set:** Total of 143 core commands (137 operations in `com.h` and 6 interface functions in `Lax.c`)
 
 ## Core Mechanics
 
-### Binary Character Encoding
+### Simple Character Handling
 
-The Ɛ𖣐 compiler does not accept standard ASCII or UTF-8 string literals for processing. Every character, digit, or symbol must be provided in its 8-bit binary representation. Failure to do so results in an immediate `SyntaxError`.
-
-For example, to output "H", the source must contain the binary sequence: `01001000`.
-
-### GUI Subsystem
-
-Despite its low-level nature, Ɛ𖣐 supports a dedicated graphical library known as `gui`. This allows developers to construct windows, icons, and interactive elements. While similar in capability to Python's Tkinter, the Ɛ𖣐 implementation requires manual byte-mapping for every visual component.
-
-## The Elementary IDE
-
-The official development environment, **Elementary**, features a high-contrast interface:
-
-* **Primary Theme:** Deep Black background with Lime Green accents.
-* **Make Bin Utility:** A specialized Linux-only feature that compiles `.estx` source directly into a standalone binary executable, similar to the behavior of PyInstaller but utilizing native Ɛ𖣐 compilation logic.
-* **BIN ⟨⟩ Text Utility:** A live conversion tool integrated into the IDE to assist developers in translating standard text into the mandatory binary format required by the compiler.
-* **Error Diagnostics:** Advanced syntax highlighting and underline-based error reporting that pinpoints the exact line and bit-sequence causing an execution failure.
+The Lax compiler is designed to be modern and efficient. It supports standard character processing, allowing developers to work with text and data in a natural way. The internal logic is optimized to handle string operations without the burden of manual bit-level manipulation found in older systems.
 
 ## Commands and Syntax
 
-The instruction set contains over 1,000 commands. All commands are strictly lowercase. The logic follows a pseudo-assembly structure where data movement, arithmetic, and system calls require explicit register addressing.
+The instruction set is concise and powerful, containing a total of **143 commands** (137 defined in `com.h` and 6 core interfaces in `Lax.c`). All commands are strictly lowercase and follow a logical, easy-to-remember structure.
 
 **Example Syntax Logic:**
 
-* Functions and execution calls must precede the binary data.
-* Textual comments or metadata are encapsulated in asterisks: `*Comment Example*`.
-* Direct hardware interrupts are used for all I/O operations.
-
-## Installation and Compatibility
-
-### Linux
-
-* Supports full binary compilation via the `Make Bin` feature.
-* Full terminal integration and execution of generated binaries.
-
-### Windows
-
-* Supports the Elementary IDE for code writing and debugging.
-* `Make Bin` functionality is disabled; execution is handled within the IDE environment.
+* Functions and execution calls are structured for maximum clarity.
+* Text comments or metadata are enclosed in pluses: `+ Example comment +`.
+* High-level abstractions handle I/O operations, keeping the code clean and readable.
 
 ## License and Restrictions
 
 **No License.**
 
-All rights are reserved by Emeralds Inc.
+All rights are reserved by Lax Inc.
 
 * **Copying is strictly prohibited.**
-* The redistribution of source code, binaries, or the Ɛ𖣐 compiler logic is not permitted.
-* Unauthorized use of the Ɛ𖣐 trademark or the Elementary IDE interface design is forbidden.
+* The redistribution of source code, binaries, or the Lax compiler logic is not permitted.
+* Unauthorized use of the Lax trademark or the `Lax REPL CLI` interface design is forbidden.
